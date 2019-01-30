@@ -72,7 +72,7 @@ class LabelMyTextWidget:
     def on_button_clicked_t(self, b):
         #print(f"TEST Button clicked: {b.description}, {b.class_id}")
         if (self.cursor) <= len(self.df_explore) and len(self.df_explore) > 0: 
-            self.df_source.loc[self.df_explore[self.cursor - 1], self.output_column] = {b.class_id}
+            self.df_source.loc[self.df_explore[self.cursor - 1], self.output_column] = b.class_id
         self.display_next_row()
         
     def display_next_row(self):
@@ -85,7 +85,7 @@ class LabelMyTextWidget:
         
         next_text = str(self.df_source[self.content_column].loc[self.df_explore[self.cursor]])
         with self.out:
-            print(f'Row index: {self.df_explore[self.cursor]} | Number of row processed : {self.cursor} \n')
+            print(f'Row index: {self.df_explore[self.cursor]} | Number of rows processed : {self.cursor} \n')
             print(f'{next_text}')
         
         
