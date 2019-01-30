@@ -28,5 +28,6 @@ Besides that, the following should be installed:
 
 `
 pip install ipywidgets
+
 jupyter nbextension enable --py widgetsnbextension
 `
