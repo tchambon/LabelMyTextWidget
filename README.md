@@ -15,7 +15,7 @@ A Jupyter notebook is at the root of the repository, and it contains an example.
 
 ## How to install it
 
-For the time being, you have to download the folder LabelMyTextWidget and put it in your project repository.
+For the time being, you have to download the folder LabelMyTextWidget and put it in your project folder.
 Better installation options and packaging will come soon.
 
 
@@ -26,8 +26,8 @@ The best is to use the Anaconda distribution with Python 3.
 
 Besides that, the following should be installed:
 
-`
+```shell
 pip install ipywidgets
 
 jupyter nbextension enable --py widgetsnbextension
-`
+```
